@@ -234,7 +234,7 @@ async function startImageSequence(theme, isFreshSelection = false) {
     });
 
     const imagesToDisplay = currentImagesForSequence;
-    const imageDuration = 400; // Duration each image is shown (in ms)
+    const imageDuration = 600; // Duration each image is shown (in ms)
     const animationSpeed = 400; // Speed of fade in/out animation
 
     for (let i = 0; i < imagesToDisplay.length; i++) {
