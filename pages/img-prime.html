@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Priming Focus - Youprime</title>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="img-prime.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="img-prime.js" defer></script> 
+    
+</head>
+<body>
+    <div id="three-bg"></div>
+
+    <div class="header-bar">
+        <div class="logo">
+            <span class="you">You</span><span class="prime">prime</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Select Your Priming Focus</h1>
+            <p>Choose a theme below to align your mindset and harness the power of priming for personal growth and success.</p>
+        </header>
+        <main class="priming-themes-grid" id="primingThemesGrid">
+            <!-- Priming theme cards will be dynamically inserted here by JavaScript -->
+        </main>
+        <footer>
+            <p>Your journey to enhanced focus starts here. <br> <a href="./prime.html">Back to Priming method</a>.</p>
+        </footer>
+    </div>
+
+    <div id="word-sequence-container">
+        <div id="word-display"></div>
+    </div>
+
+    <div id="post-sequence-options">
+        <h3>Sequence Complete!</h3>
+        <button id="replaySequenceBtn">Replay the sequence</button>
+        <button id="chooseAnotherThemeBtn">Choose another theme</button>
+        <button id="changePrimingMethodBtn" class="secondary">Change priming method</button>
+    </div>
+</body>
+</html>

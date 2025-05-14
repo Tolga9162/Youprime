@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youprime - Select Your Priming Experience</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./prime-script.js"></script>
+    <link rel="stylesheet" href="./prime-styles.css">
+</head>
+<body>
+    <canvas id="threejs-bg-canvas"></canvas>
+
+    <a href="../index.html" class="logo-header">You<span>prime</span></a> 
+
+    <div class="selection-container anim-scale-up" style="animation-delay: 0.2s;">
+        <h1 class="page-title anim-fade-in-up" style="animation-delay: 0.4s;">Chart Your Course</h1>
+        <p class="page-subtitle anim-fade-in-up" style="animation-delay: 0.6s;">How will you sculpt your mindset today? Each path offers a unique way to harness the power of priming.</p>
+
+        <div class="method-selection-grid">
+            <a href="text-prime.html" class="method-card anim-fade-in-up" style="animation-delay: 0.8s;">
+                <div class="icon-wrapper"><span class="method-icon">✍️</span></div>
+                <div>
+                    <h3>Verbal Catalyst</h3>
+                    <p>Engage with precisely chosen words, affirmations, or quotes. Perfect for direct focus and reinforcing your intentions.</p>
+                </div>
+                <span class="select-btn">Choose Text</span>
+            </a>
+            <a href="img-prime.html" class="method-card anim-fade-in-up" style="animation-delay: 1s;">
+                 <div class="icon-wrapper"><span class="method-icon">👁️‍🗨️</span></div>
+                 <div>
+                    <h3>Visual Blueprint</h3>
+                    <p>Immerse in resonant imagery. Ideal for evoking emotion, visualizing success, and fostering creative thought.</p>
+                </div>
+                <span class="select-btn">Choose Image</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer-note anim-fade-in-up" style="animation-delay: 1.2s;">
+        <p>Your journey to enhanced focus starts here. <a href="../index.html">Back to Homepage</a>.</p>
+    </footer>
+</body>
+</html>
