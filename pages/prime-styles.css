@@ -56,7 +56,7 @@
         }
         
         .logo-header {
-            position: fixed; /* Changed to fixed so it stays on scroll */
+            position: static; /* Changed to fixed so it stays on scroll */
             top: 25px;
             left: 30px;
             font-size: 2em;
