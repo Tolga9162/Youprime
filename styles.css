@@ -300,10 +300,10 @@
         }
 
         .cta-section .section-title {
-            color: var(--clr-bg-lightest);
+            color: var(--clr-text-darkest);
         }
         .cta-section p {
-            color: var(--clr-accent-medium);
+            color: var(--clr-accent-dark);
             font-size: 1.2em;
             margin-bottom: 40px;
             max-width: 600px;
@@ -311,12 +311,12 @@
             margin-right:auto;
         }
         .cta-section .btn {
-            background: var(--clr-bg-lightest);
-            color: var(--clr-accent-dark);
+            background: var(--clr-accent-darker);
+            color: var(--clr-bg-light);
             box-shadow: 0 4px 15px rgba(255,255,255,0.1), inset 0 -2px 0px rgba(0,0,0,0.1);
         }
         .cta-section .btn:hover {
-            background: var(--clr-bg-lighter);
+            background: var(--clr-accent-medium);
             color: var(--clr-text-darkest);
             transform: translateY(-3px) scale(1.03);
             box-shadow: 0 6px 20px rgba(255,255,255,0.15), inset 0 -2px 0px rgba(0,0,0,0.1);
@@ -362,5 +362,59 @@
             #about, #how-it-works, #why-us { margin-top: -40px; padding-top: 80px; clip-path: none; } /* Simplify clip paths on small screens or remove */
             .cta-section { margin-top: 0; }
         }
+        .testimonial-item {
+    /* You can keep most of the feature-item styling */
+    /* Or add specific overrides here */
+    border-left-color: var(--clr-accent-medium); /* Example: different accent color for testimonials */
+}
 
+.testimonial-item .icon-placeholder { /* If you decide to add icons to testimonials later */
+    display: none; /* Hiding icon placeholder if not used for testimonials */
+}
+.testimonial-item h3 { /* Hiding h3 if not used for testimonials */
+    display: none;
+}
+
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 1.05em;
+    color: var(--clr-text-dark);
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px; /* Space for quote mark */
+}
+
+.testimonial-quote::before {
+    content: '“';
+    position: absolute;
+    left: 0;
+    top: -5px; /* Adjust as needed */
+    font-size: 2em;
+    color: var(--clr-accent-dark);
+    line-height: 1;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: var(--clr-accent-dark);
+    font-size: 0.95em;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Ensure feature-item doesn't assume h3 is always there */
+.feature-item p:first-child:not(.testimonial-quote) { /* If p is the first child and not a quote, it might need margin if h3 is gone */
+    margin-top: 0; /* Adjust if needed if you remove h3 from some feature-items */
+}
+
+/* Responsive adjustments for testimonials if needed */
+@media (max-width: 768px) {
+    .testimonial-quote {
+        padding-left: 20px;
+    }
+    .testimonial-quote::before {
+        font-size: 1.8em;
+    }
+}
   
